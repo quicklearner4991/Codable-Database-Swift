@@ -5,10 +5,10 @@ Swift 5
 Example of Codable data to show list of items and option to add items
 
 Sample code
-
 let dataPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Item.plist")
 
-  func saveItems(){
+
+    func saveItems(){
         let encoder = PropertyListEncoder()
         do {
         let data = try encoder.encode(self.array)
@@ -18,7 +18,6 @@ let dataPath = FileManager.default.urls(for: .documentDirectory, in: .userDomain
         }
         self.tableView.reloadData()
     }
-    
     func loadItems(){
         if let data = try? Data(contentsOf: dataPath!){
             let decoder = PropertyListDecoder()
