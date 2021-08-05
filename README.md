@@ -5,6 +5,7 @@ Swift 5
 Example of Codable data to show list of items and option to add items
 
 Sample code
+
 let dataPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Item.plist")
 
 
